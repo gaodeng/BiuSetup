@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="520,360"    caption="0,0,0,-1"  roundcorner="4,4" showshadow="true" shadowimage="shadow.png" shadowcorner="23,13,23,33" bktrans="false">
+<Font name="Arial" size="12" default="true" />
+  <Font name="Arial" size="12" bold="true" />
+  <Font name="宋体" size="12" />
+  <Font name="宋体" size="14" bold="true" />
+  <Font name="宋体" size="22" bold="true" italic="true"/>
+  <Font name="宋体" size="12" />
+  <Font name="Arial" size="12" bold="true"/>
+
+
+<Default name="VScrollBar" value="width=&quot;10&quot; showbutton1=&quot;false&quot; showbutton2=&quot;false&quot; thumbnormalimage=&quot;file='scroll_fore.png'  corner='4,4,4,4' fade='150' &quot; thumbhotimage=&quot;file='scroll_fore.png'  corner='4,4,4,4' &quot; thumbpushedimage=&quot;file='scroll_fore.png'  corner='4,4,4,4' &quot; " />
+
+    <Container name="ContainerUI1"  bordercolor="#ff5a5e68" bordersize="1" >
+        <VerticalLayout name="VerticalLayoutUI1"   bkcolor="fffdfdfd"   >
+            <HorizontalLayout height="4" bkcolor="FF66CC99">
+
+            </HorizontalLayout>
+            <HorizontalLayout height="23">
+              <HorizontalLayout>
+                <Text text="Halo" pos="8, 6, 100, 24" float="true" textcolor="#ff66cc99" font="6" />
+                <Text text="Radio 安裝向導" pos="34, 6, 180, 24" float="true" textcolor="#ff5a5e68" font="6" />
+               
+              </HorizontalLayout>
+              <HorizontalLayout width="58" inset="0,0,0,0">
+               
+               
+
+
+                
+                <Button name="Wizard_MinBtn" maxwidth="27" maxheight="22" normalimage="file='sys_btn_min.png' source='0,0,26,22'" hotimage="file='sys_btn_min.png' source='27,0,53,22'" pushedimage="file='sys_btn_min.png' source='54,0,80,22'"/>
+                
+                <Button name="Wizard_CloseBtn" maxwidth="27" maxheight="22" normalimage="file='sys_btn_close1.png' source='0,0,26,22'" hotimage="file='sys_btn_close1.png' source='27,0,53,22'" pushedimage="file='sys_btn_close1.png' source='54,0,80,22'"/>
+              </HorizontalLayout>
+            </HorizontalLayout>
+            <VerticalLayout name="VerticalLayoutUI4" >
+                <TabLayout name="WizardTab" inset="20,20,20,20">
+                    <VerticalLayout name="VerticalLayoutUI5" >
+                         <HorizontalLayout height="22" >
+                          <Control />
+                          <Label  text="歡迎" visible="true" width="78" height="18" textcolor="#ff66cc99" align="center"  />
+                          <Label  text="選項" visible="true"  width="78"  height="18" textcolor="#ff5a5e68" align="center"  />
+                          <Label  text="安裝" visible="true"  width="78"  height="18" textcolor="#ff5a5e68" align="center" />
+                          <Label  text="完成" visible="true"  width="78"  height="18" textcolor="#ff5a5e68" align="center" />
+                          <Control  bkcolor="#00FF0000"/>
+                        </HorizontalLayout>
+                        <HorizontalLayout name="VerticalLayoutUI3"  height="40">
+
+                           <Control  bkcolor="#00FF0000"/>
+                            
+                            <Control    width="258" height="22" bkimage="file='step1.png'" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" />
+                           <Control  bkcolor="#00FFff00"/>
+                        </HorizontalLayout>
+                        
+                        <RichEdit name="LicenceRichEdit"   inset="14,4,2,4"  bkcolor="#fff0f0f0" textcolor="#ff5a5e68"  multiline="true" vscrollbar="true" autovscroll="true" enabled="false" rich="true" readonly="true" />
+                                
+                       
+                        <Label name="Wizard_SmallTitle" text="請您閱讀軟件許可協議，繼續安裝即表示您已經接受協議。"  padding="0,10,0,10" autocalcwidth="true"  height="24" textcolor="#ff5a5e68" disabledtextcolor="#FFA7A6AA" showhtml="true" />
+                        <HorizontalLayout height="28">
+                            <Control  bkcolor="#00FF0000"/>
+                            <Button name="Wizard_CancelBtn4Page1" text="取消" width="80" height="28" textcolor="#FFFFFFFF" disabledtextcolor="#FFA7A6AA" align="center" normalimage="file='button_normal.png'" hotimage="file='button_hover.png'" pushedimage="file='button_pushed.png'" />
+                             <Button name="Wizard_NextBtn4Page1" text="繼續安裝" width="100" height="28" textcolor="#FFFFFFF" padding="10,0,0,0" disabledtextcolor="#FFA7A6AA" align="center" normalimage="file='btn_success_normal.png'" hotimage="file='btn_success_hover.png'" pushedimage="file='btn_success_pushed.png'" />
+                        </HorizontalLayout>
+                   
+                    </VerticalLayout>
+                    <VerticalLayout name="VerticalLayoutUI6" >
+                         <HorizontalLayout height="22" >
+                          <Control />
+                          <Label  text="歡迎" visible="true" width="78" height="18" textcolor="#ff66cc99" align="center"  />
+                          <Label  text="選項" visible="true"  width="78"  height="18" textcolor="#ff5a5e68" align="center"  />
+                          <Label  text="安裝" visible="true"  width="78"  height="18" textcolor="#ff5a5e68" align="center" />
+                          <Label  text="完成" visible="true"  width="78"  height="18" textcolor="#ff5a5e68" align="center" />
+                          <Control  bkcolor="#00FF0000"/>
+                        </HorizontalLayout>
+                        <HorizontalLayout name="VerticalLayoutUI3" height="40">
+                           <Control  bkcolor="#00FF0000"/>
+                            <Control    width="258" height="22" bkimage="file='step2.png'" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" />
+                           <Control  bkcolor="#00FFff00"/>
+                        </HorizontalLayout>
+                        <VerticalLayout>
+                            <Label name="LabelUI2" text="選擇安裝目錄" visible="true"  width="75" height="18" textcolor="#ff5a5e68" disabledtextcolor="#FFA7A6AA" />
+                            <HorizontalLayout height="28" padding="0,5,0,5">
+                                <Edit name="Wizard_InstallPathEdit4Page2"  height="28"  textpadding="10,3,10,3"   readonly="false" bkcolor="ffffffff"  bordercolor="#fff5f5f5" bordersize="1"  focusbordercolor="#fff0f0f0" />
+                                <Button name="Wizard_InstallPathBtn4Page2" text="瀏覽" visible="true" padding="10,0,0,0" width="80" height="28" textcolor="#FFFFFFFF" disabledtextcolor="#FFA7A6AA" align="center" normalimage="file='button_normal.png'" hotimage="file='button_hover.png'" pushedimage="file='button_pushed.png'" />
+                            </HorizontalLayout>
+
+                            
+                            <HorizontalLayout height="19" padding="0,5,0,5">
+                                <Label name="Wizard_LeftSpaceLab4Page2"  text="所需磁盤空間:" visible="true"  autocalcwidth="true" height="18" textcolor="#ff5a5e68" disabledtextcolor="#FFA7A6AA" />
+                                <Label  visible="true" text="80MB" autocalcwidth="true"  height="18" textcolor="#ff5a5e68" disabledtextcolor="#FFA7A6AA" />
+                                <Control />
+                                <Label name="LabelUI15" text="可用磁盤空間:" visible="true"  autocalcwidth="true" height="18" textcolor="#ff5a5e68" disabledtextcolor="#FFA7A6AA" />
+                                <Label name="Wizard_UsableSpaceLab4Page2" visible="true"  autocalcwidth="true" height="18" textcolor="#ff5a5e68" disabledtextcolor="#FFA7A6AA" />
+                            </HorizontalLayout>
+                            <Label name="LabelUI3" padding="0,5,0,5" text="設置安裝選項" visible="true"  autocalcwidth="true"  height="18" textcolor="#ff5a5e68" disabledtextcolor="#FFA7A6AA" />
+                            
+                           
+                           
+                            <Option name="Wizard_ShortCutBtn4Page2" padding="0,5,0,0"  selected="true" visible="true"    height="20" textcolor="#ff5a5e68" disabledtextcolor="#FFA7A6AA" align="left" textpadding="28,4,0,0" selected="true" normalimage="file='checkbox.png' dest='0,0,20,20'" selectedimage="file='checkbox_checked.png' dest='0,0,20,20'" text="創建桌面快捷方式" />
+
+                            
+                            <Option name="Wizard_QuickLaunchBarBtn4Page2" padding="0,5,0,0"  selected="true" visible="true"  height="20" textcolor="#ff5a5e68" disabledtextcolor="#FFA7A6AA" align="left" textpadding="28,4,0,0" selected="true" normalimage="file='checkbox.png' dest='0,0,20,20'" selectedimage="file='checkbox_checked.png' dest='0,0,20,20'" text="添加到快捷啟動欄" />
+                           
+                            
+                           
+                           
+                        </VerticalLayout>
+
+                        <HorizontalLayout  height="28" >
+                            <Button name="Wizard_BackBtn4Page2" text="上一步" visible="true"  width="80" height="28" textcolor="#FFFFFFFF" disabledtextcolor="#FFA7A6AA" align="center" normalimage="file='button_normal.png'" hotimage="file='button_hover.png'" pushedimage="file='button_pushed.png'" />
+                            <Control />
+                            <Button name="Wizard_CancelBtn4Page2" text="取消" visible="true"  width="80" height="28" textcolor="#FFFFFFF" disabledtextcolor="#FFFFFFFF" align="center" normalimage="file='button_normal.png'" hotimage="file='button_hover.png'" pushedimage="file='button_pushed.png'" />
+                            <Button name="Wizard_StartInstallBtn4Page2" text="開始安裝" visible="true"  width="100" height="28" padding="10,0,0,0" textcolor="#FFFFFFFF" disabledtextcolor="#ff666666" align="center" normalimage="file='btn_success_normal.png'" hotimage="file='btn_success_hover.png'" pushedimage="file='btn_success_pushed.png'" disabledimage="btn_disabled.png"/>
+                        </HorizontalLayout>
+                    </VerticalLayout>
+                    <VerticalLayout name="VerticalLayoutUI7" >
+                         <HorizontalLayout height="22" >
+                          <Control />
+                          <Label  text="歡迎" visible="true" width="78" height="18" textcolor="#ff66cc99" align="center"  />
+                          <Label  text="選項" visible="true"  width="78"  height="18" textcolor="#ff5a5e68" align="center"  />
+                          <Label  text="安裝" visible="true"  width="78"  height="18" textcolor="#ff5a5e68" align="center" />
+                          <Label  text="完成" visible="true"  width="78"  height="18" textcolor="#ff5a5e68" align="center" />
+                          <Control  bkcolor="#00FF0000"/>
+                        </HorizontalLayout>
+                        <HorizontalLayout name="VerticalLayoutUI3"  height="30">
+                           <Control  bkcolor="#00FF0000"/>
+                            <Control    width="258" height="22" bkimage="file='step3.png'" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" />
+                           <Control  bkcolor="#00FFff00"/>
+                        </HorizontalLayout>
+                        <VerticalLayout >
+                            <Control />
+                            <HorizontalLayout height="120">
+                                
+                                 <Label name="LabelUI8" text="HaloRadio正在安裝，請稍候......"  padding="0,5,0,0"  width="206" height="23" textcolor="#ff5a5e68" disabledtextcolor="#FFA7A6AA" />
+                                 <Control />
+                                <Container name="Wizard_Background4Page3" height="120" width="370"  padding="0,5,0,0"    bkimage="progress_banner1.png" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" visible="false"/>
+                                <Control />
+                            </HorizontalLayout>
+                            <Control />
+                            <Progress name="Wizard_InstallProgress"    padding="0,25,0,0"  height="10" bkimage="file='progress_bk.png' corner='5,4,4,5'" foreimage="file='progress_fore.png' corner='5,4,4,5'" min="0" max="100"  hor="true" />
+                        </VerticalLayout>
+                        <HorizontalLayout height="28"  padding="0,25,0,0" >
+                            <Control />
+                            <Button name="Wizard_CancelBtn4Page3" text="取消"  width="120" height="28" textcolor="#FFFFFFFF" disabledtextcolor="#FFA7A6AA" align="center" normalimage="file='button_normal.png'" hotimage="file='button_hover.png'" pushedimage="file='button_pushed.png'" />
+                        </HorizontalLayout>
+                    </VerticalLayout>
+                    <VerticalLayout name="VerticalLayoutUI8" >
+                         <HorizontalLayout height="22" >
+                          <Control />
+                          <Label  text="歡迎" visible="true" width="78" height="18" textcolor="#ff66cc99" align="center"  />
+                          <Label  text="選項" visible="true"  width="78"  height="18" textcolor="#ff5a5e68" align="center"  />
+                          <Label  text="安裝" visible="true"  width="78"  height="18" textcolor="#ff5a5e68" align="center" />
+                          <Label  text="完成" visible="true"  width="78"  height="18" textcolor="#ff5a5e68" align="center" />
+                          <Control  bkcolor="#00FF0000"/>
+                        </HorizontalLayout>
+                        <HorizontalLayout name="VerticalLayoutUI3"  height="30">
+                           <Control  bkcolor="#00FF0000"/>
+                           <Control    width="258" height="22" bkimage="file='step4.png'" textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" />
+                           <Control  bkcolor="#00FFff00"/>
+                        </HorizontalLayout>
+                        <VerticalLayout>
+                            <Label name="LabelUI8" text="HaloRadio已經成功安裝！"  padding="0,5,0,0"  width="206" height="60" textcolor="#ff5a5e68" disabledtextcolor="#FFA7A6AA" />
+                           
+                            <Option name="Wizard_BootRuning360SafeBtn"  padding="0,5,0,0"    height="20" textcolor="#ff5a5e68" disabledtextcolor="#FFA7A6AA" align="left" textpadding="28,4,0,0" selected="false" normalimage="file='checkbox.png' dest='0,0,20,20'" selectedimage="file='checkbox_checked.png' dest='0,0,20,20'" text="开机启动HaloRadio" />
+                                
+                           
+                            <Option name="Wizard_Runing360SafeBtn"  padding="0,5,0,0"   height="20" textcolor="#ff5a5e68" disabledtextcolor="#FFA7A6AA" align="left" textpadding="28,4,0,0" selected="true" normalimage="file='checkbox.png' dest='0,0,20,20'" selectedimage="file='checkbox_checked.png' dest='0,0,20,20'" text="立即运行HaloRadio" />
+                                
+                               
+                           
+                           
+                        </VerticalLayout>
+                         <HorizontalLayout height="18">
+                                <Label name="LabelUI9" text="歡迎登錄官方網站了解更多產品介紹 &lt;u&gt;&lt;c #5a5e68&gt;http://www.icyarrow.com&lt;/c&gt;&lt;/u&gt;" float="true" pos="0,0,0,0" width="380" height="18" textcolor="#ff5a5e68" disabledtextcolor="#FFA7A6AA" showhtml="true" />
+                            
+                                <Button name="Wizard_110Btn4Page4" float="true" pos="195,0,0,0" width="130" height="18" align="center" />
+                        </HorizontalLayout>
+                        <HorizontalLayout height="28" padding="0,10,0,0">
+                            <Control />
+                            <Button name="Wizard_FinishedBtn4Page4" text="完成"  width="120" height="28" textcolor="#FFFFFFFF" disabledtextcolor="#FFA7A6AA" align="center" normalimage="file='btn_success_normal.png'" hotimage="file='btn_success_hover.png'" pushedimage="file='btn_success_pushed.png'" />
+                        </HorizontalLayout>
+                    </VerticalLayout>
+                </TabLayout>
+            </VerticalLayout>
+        </VerticalLayout>
+    </Container>
+</Window>

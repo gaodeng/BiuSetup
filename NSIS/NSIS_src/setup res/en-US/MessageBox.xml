@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="380,150"  caption="0,0,0,-1"  roundcorner="4,4" showshadow="true" shadowimage="shadow_menu.png" shadowcorner="23,13,23,33" bktrans="false">
+	<Font name="宋体" size="13"   default="true"/>
+	 <Container name="ContainerUI1"  bordercolor="#ff5a5e68" bordersize="1" >
+       <VerticalLayout name="VerticalLayoutUI1"   bkcolor="fffdfdfd"   >
+       	 <HorizontalLayout height="4" bkcolor="FF66CC99">
+
+         </HorizontalLayout>
+          <HorizontalLayout height="23">
+              <HorizontalLayout>
+               
+                <Text  name="TitleLab" text="Radio Install Wizard" pos="8, 6, 180, 24" float="true" textcolor="#ff5a5e68" font="6" />
+               
+              </HorizontalLayout>
+              <HorizontalLayout width="30" inset="0,0,0,0" visible="false">
+               
+               
+
+
+                
+                
+                
+                <Button name="Wizard_CloseBtn" maxwidth="27" maxheight="22" normalimage="file='sys_btn_close1.png' source='0,0,26,22'" hotimage="file='sys_btn_close1.png' source='27,0,53,22'" pushedimage="file='sys_btn_close1.png' source='54,0,80,22'"/>
+              </HorizontalLayout>
+            </HorizontalLayout>
+
+            <VerticalLayout name="VerticalLayoutUI4" inset="15,15,15,15">
+			    <VerticalLayout name="VerticalLayoutUI2"  >
+			        
+			        <RichEdit name="TextLab"     textcolor="#FF000000" disabledtextcolor="#FFA7A6AA" showhtml="true" enabled="false"/>
+			        
+			       
+			    </VerticalLayout>
+			   <Control height="20"/>
+		      <HorizontalLayout  height="28" >
+
+		      
+	                            <Button name="CloseBtn"  text="Close" visible="false"  width="80" height="28" textcolor="#FFFFFFFF" disabledtextcolor="#FFA7A6AA" align="center" normalimage="button_normal.png" hotimage="button_hover.png" pushedimage="button_pushed.png" />
+	                            <Control />
+	                            <Button name="YESBtn"   text="OK"  visible="true"  width="100" height="28"  textcolor="#FFFFFFFF" disabledtextcolor="#ff666666" align="center" normalimage="btn_success_normal.png" hotimage="btn_success_hover.png" pushedimage="btn_success_pushed.png" disabledimage="btn_disabled.png"/>
+
+	                            <Button name="NOBtn"  text="NO" visible="true"  width="80" height="28" textcolor="#FFFFFFF" padding="10,0,0,0" disabledtextcolor="#FFFFFFFF" align="center" normalimage="button_normal.png" hotimage="button_hover.png" pushedimage="button_pushed.png" />
+	                            
+	           </HorizontalLayout>
+
+
+       </VerticalLayout >
+     </VerticalLayout>
+ </Container>
+</Window>

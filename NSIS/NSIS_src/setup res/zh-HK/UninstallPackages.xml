@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<Window size="500,340"  caption="0,0,0,-1" roundcorner="4,4"   showshadow="true" shadowimage="shadow.png" shadowcorner="23,13,23,33"  bktrans="false">
+    <Font name="Arial" size="12" default="true" />
+    <Font name="Arial" size="12" bold="true" />
+    <Font name="宋体" size="12" />
+    <Font name="宋体" size="14" bold="true" />
+    <Font name="宋体" size="22" bold="true" italic="true"/>
+    <Font name="宋体" size="12" />
+    <Font name="Arial" size="12" bold="true"/>
+    <Container name="ContainerUI1">
+        <VerticalLayout name="VerticalLayoutUI1" bkcolor="#fffdfdfd"   >
+			<HorizontalLayout height="4" bkcolor="FF66CC99">
+
+            </HorizontalLayout>
+            <HorizontalLayout height="30">
+              <HorizontalLayout>
+                <Container width="24" height="24" bkimage="file='title_icon.png' source='0,0,21,21' dest='3,3,24,24' " />
+                <Text text="Halo" pos="22, 6, 100, 24" float="true" textcolor="#ff66cc99" font="6" />
+                <Text text="Radio 卸載向導" pos="48, 6, 240, 24" float="true" textcolor="#ff5a5e68" font="6" />
+              </HorizontalLayout>
+              <HorizontalLayout width="58" inset="0,1,0,0">
+                <Button name="Wizard_MinBtn" maxwidth="27" maxheight="22" normalimage="file='sys_btn_min.png' source='0,0,26,22'" hotimage="file='sys_btn_min.png' source='27,0,53,22'" pushedimage="file='sys_btn_min.png' source='54,0,80,22'"/>
+                <Button name="Wizard_CloseBtn" maxwidth="27" maxheight="22" normalimage="file='sys_btn_close.png' source='0,0,26,22'" hotimage="file='sys_btn_close.png' source='27,0,53,22'" pushedimage="file='sys_btn_close.png' source='54,0,80,22'"/>
+              </HorizontalLayout>
+            </HorizontalLayout>
+
+            <VerticalLayout name="VerticalLayoutUI4">
+                <TabLayout name="WizardTab" inset="20,20,20,20">
+                    <VerticalLayout name="VerticalLayoutUI12">
+                        <Label name="LabelUI2" text="確定要從您的計算機中卸載 HaloRadio？"  height="30" textcolor="#ff5a5e68" disabledtextcolor="#FFA7A6AA" />
+                         
+                        <Control />
+                        <HorizontalLayout height="28">
+                            <Control />
+                            
+                            <Button name="CancelBtn4UninstallPage" text="取消"  width="80" height="28" textcolor="#FFFFFFFF" disabledtextcolor="#FFA7A6AA" align="center" normalimage="button_normal.png" hotimage="button_hover.png" pushedimage="button_pushed.png" />
+                            <Button name="UninstallBtn4UninstallPage" text="卸載"  width="100" height="28" textcolor="#FFFFFFFF" disabledtextcolor="#FFA7A6AA" align="center" normalimage="btn_danger_normal.png" hotimage="btn_danger_hover.png" pushedimage="btn_danger_pushed.png" padding="10,0,0,0"/>
+                        </HorizontalLayout>
+                        
+                       
+                    </VerticalLayout>
+                    <VerticalLayout name="VerticalLayoutUI13" >
+                        <Control />
+                        
+                        <Progress name="Wizard_UninstallProgress"   height="10" height="10" bkimage="file='progress_bk.png' corner='5,4,4,5'" foreimage="file='progress_fore.png' corner='5,4,4,5'" min="0" max="100"  hor="true"  />
+                        <Label name="LabelUI1" text="正在卸載,請稍候..."   height="30" textcolor="#ff5a5e68" disabledtextcolor="#FFA7A6AA" />
+                        <Control />
+                    </VerticalLayout>
+                    <VerticalLayout name="VerticalLayoutUI14">
+                        <Label name="LabelUI1" text="HaloRadio 已從您的計算機中移除。"   height="30" textcolor="#ff5a5e68" disabledtextcolor="#FFA7A6AA" />
+                        <Label name="LabelUI11" text="請點擊“完成”退出。"  height="30" textcolor="#ff5a5e68" disabledtextcolor="#FFA7A6AA" />
+                        <Control />
+                        <HorizontalLayout height="18" >
+                            <Label name="LabelUI9" text="歡迎登錄官方網站了解更多產品介紹 &lt;u&gt;&lt;c #5a5e68&gt;http://www.icyarrow.com&lt;/c&gt;&lt;/u&gt;"  width="380" height="18" textcolor="#ff5a5e68" disabledtextcolor="#FFA7A6AA" showhtml="true" />
+                            <Button name="Wizard_110Btn4UninstallPage" float="true" pos="195,0,0,0" width="150" height="18" align="center" bkcolor="#00ff0000"/>
+                        </HorizontalLayout>
+
+                        <HorizontalLayout height="28" padding="0,10,0,0">
+                            <Control />
+                            <Button name="FinishedBtn4UninstallPage" text="完成"  width="100" height="28" textcolor="#FFFFFFFF" disabledtextcolor="#FFA7A6AA" align="center" normalimage="btn_success_normal.png" hotimage="btn_success_hover.png" pushedimage="btn_success_pushed.png" />
+                        </HorizontalLayout>
+                    </VerticalLayout>
+                </TabLayout>
+            </VerticalLayout>
+        </VerticalLayout>
+    </Container>
+</Window>
